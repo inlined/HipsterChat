@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "HipsterChat": {
+            "applicationId": "TsvcswckVymbVUOhPMkKsT6aGtdAqhdrvW6dBozH", 
+            "masterKey": "wdBqKs59ZnwBZa0OZp1ORIXolmKouhGy3NKCNrBG"
+        }, 
+        "_default": {
+            "link": "HipsterChat"
+        }
+    }
+}
