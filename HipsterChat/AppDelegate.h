@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class ChatViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
++ (void)setChatViewController:(ChatViewController *)viewController;
 
 @end

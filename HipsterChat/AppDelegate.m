@@ -9,7 +9,15 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 
+#import "ChatViewController.h"
+
+static ChatViewController *viewController;
+
 @implementation AppDelegate
+
++ (void)setChatViewController:(ChatViewController *)aViewController {
+    viewController = aViewController;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -22,7 +30,46 @@
     [Parse setApplicationId:@"TsvcswckVymbVUOhPMkKsT6aGtdAqhdrvW6dBozH"
                   clientKey:@"pfgiB6GkK5Atgw4ZEFIUL53PkJRddqTUwvfHeRzZ"];
     [PFFacebookUtils initializeFacebook];
+    
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+                                                    UIRemoteNotificationTypeAlert|
+                                                    UIRemoteNotificationTypeSound];
+                                                    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"Failed to register for remote notifications");
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    NSLog(@"Received background fetch");
+    PFQuery *query = [PFQuery queryWithClassName:@"Chat"];
+    [query orderByDescending:@"createdAt"];
+    query.cachePolicy = kPFCachePolicyNetworkOnly;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        NSLog(@"Done with background fetch");
+        if (error) {
+            completionHandler(UIBackgroundFetchResultFailed);
+        } else {
+            viewController.objects = [objects mutableCopy];
+            [viewController.collectionView reloadData];
+            [viewController.collectionView setNeedsDisplay];
+            completionHandler(UIBackgroundFetchResultNewData);
+        }
+    }];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url

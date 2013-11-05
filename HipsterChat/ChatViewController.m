@@ -9,9 +9,9 @@
 #import "ChatViewController.h"
 #import "ChatView.h"
 #import "Chat.h"
+#import "AppDelegate.h"
 
 @interface ChatViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-@property NSMutableArray *objects;
 @property ChatView *sizingView;
 @end
 
@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [AppDelegate setChatViewController:self];
     self.objects = [@[] mutableCopy];
     self.sizingView = [[ChatView alloc] init];
     [self refresh];
@@ -39,9 +40,15 @@
     }];
 }
 
-- (PFQuery *)query {
++ (PFQuery *)query {
     PFQuery *query = [PFQuery queryWithClassName:@"Chat"];
     [query orderByDescending:@"createdAt"];
+    query.cachePolicy = kPFCachePolicyNetworkOnly;
+    return query;
+}
+
+- (PFQuery *)query {
+    PFQuery *query = [[self class] query];
     if ([self.objects count]) {
         query.cachePolicy = kPFCachePolicyNetworkElseCache;
     } else {
@@ -69,11 +76,11 @@
     return cell;
 }
 
-/*
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    self.sizingView.chat = [self objectAtIndexPath:indexPath];
-    return [self.sizingView intrinsicContentSize];
-}*/
+    //   self.sizingView.chat = [self objectAtIndexPath:indexPath];
+    //return [self.sizingView intrinsicContentSize];
+    return CGSizeMake(self.view.bounds.size.width, 40);
+}
 
 - (void)didReceiveMemoryWarning
 {

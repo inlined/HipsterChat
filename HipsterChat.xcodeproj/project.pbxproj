@@ -162,17 +162,17 @@
 		17768ECE18270E8D0011521F /* HipsterChat */ = {
 			isa = PBXGroup;
 			children = (
+				17768EDA18270E8D0011521F /* Main_iPhone.storyboard */,
 				17768ED718270E8D0011521F /* AppDelegate.h */,
 				17768ED818270E8D0011521F /* AppDelegate.m */,
-				17768EDA18270E8D0011521F /* Main_iPhone.storyboard */,
-				17768EE618270E8D0011521F /* Images.xcassets */,
-				17768ECF18270E8D0011521F /* Supporting Files */,
 				1758F4951828849300E49F93 /* ChatViewController.h */,
 				1758F4961828849300E49F93 /* ChatViewController.m */,
 				1758F49B182885F200E49F93 /* ChatView.h */,
 				1758F49C182885F200E49F93 /* ChatView.m */,
 				1758F498182884DE00E49F93 /* Chat.h */,
 				1758F499182884DE00E49F93 /* Chat.m */,
+				17768EE618270E8D0011521F /* Images.xcassets */,
+				17768ECF18270E8D0011521F /* Supporting Files */,
 			);
 			path = HipsterChat;
 			sourceTree = "<group>";
@@ -253,6 +253,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Thomas Bouldin";
 				TargetAttributes = {
+					17768EC418270E8C0011521F = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					17768EEB18270E8D0011521F = {
 						TestTargetID = 17768EC418270E8C0011521F;
 					};
