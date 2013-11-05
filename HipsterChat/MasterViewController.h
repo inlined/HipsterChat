@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@class DetailViewController;
-
-@interface MasterViewController : UITableViewController
-
-@property (strong, nonatomic) DetailViewController *detailViewController;
+@interface MasterViewController : PFQueryTableViewController
 
 @end

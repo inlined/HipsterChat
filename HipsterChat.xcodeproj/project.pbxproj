@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1758F49418285CA300E49F93 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1758F49318285CA300E49F93 /* FacebookSDK.framework */; };
+		1758F4971828849300E49F93 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758F4961828849300E49F93 /* ChatViewController.m */; };
+		1758F49A182884DE00E49F93 /* Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758F499182884DE00E49F93 /* Chat.m */; };
+		1758F49D182885F200E49F93 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758F49C182885F200E49F93 /* ChatView.m */; };
 		17768EC918270E8C0011521F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768EC818270E8C0011521F /* Foundation.framework */; };
 		17768ECB18270E8C0011521F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768ECA18270E8C0011521F /* CoreGraphics.framework */; };
 		17768ECD18270E8C0011521F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768ECC18270E8C0011521F /* UIKit.framework */; };
@@ -14,15 +18,22 @@
 		17768ED518270E8D0011521F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17768ED418270E8D0011521F /* main.m */; };
 		17768ED918270E8D0011521F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17768ED818270E8D0011521F /* AppDelegate.m */; };
 		17768EDC18270E8D0011521F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17768EDA18270E8D0011521F /* Main_iPhone.storyboard */; };
-		17768EDF18270E8D0011521F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17768EDD18270E8D0011521F /* Main_iPad.storyboard */; };
-		17768EE218270E8D0011521F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17768EE118270E8D0011521F /* MasterViewController.m */; };
-		17768EE518270E8D0011521F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17768EE418270E8D0011521F /* DetailViewController.m */; };
 		17768EE718270E8D0011521F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17768EE618270E8D0011521F /* Images.xcassets */; };
 		17768EEE18270E8D0011521F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768EED18270E8D0011521F /* XCTest.framework */; };
 		17768EEF18270E8D0011521F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768EC818270E8C0011521F /* Foundation.framework */; };
 		17768EF018270E8D0011521F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768ECC18270E8C0011521F /* UIKit.framework */; };
 		17768EF818270E8D0011521F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17768EF618270E8D0011521F /* InfoPlist.strings */; };
 		17768EFA18270E8D0011521F /* HipsterChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17768EF918270E8D0011521F /* HipsterChatTests.m */; };
+		17768F0418270F0F0011521F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F0318270F0F0011521F /* Parse.framework */; };
+		17768F0618270F300011521F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F0518270F300011521F /* AudioToolbox.framework */; };
+		17768F0818270F380011521F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F0718270F380011521F /* CFNetwork.framework */; };
+		17768F0A18270F460011521F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F0918270F460011521F /* CoreLocation.framework */; };
+		17768F0C18270F4C0011521F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F0B18270F4C0011521F /* libz.1.1.3.dylib */; };
+		17768F0E18270F520011521F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F0D18270F520011521F /* MobileCoreServices.framework */; };
+		17768F1018270F580011521F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F0F18270F580011521F /* QuartzCore.framework */; };
+		17768F1218270F5D0011521F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1118270F5D0011521F /* Security.framework */; };
+		17768F1418270F640011521F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1318270F640011521F /* StoreKit.framework */; };
+		17768F1618270F6B0011521F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1518270F6B0011521F /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1758F49318285CA300E49F93 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		1758F4951828849300E49F93 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		1758F4961828849300E49F93 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		1758F498182884DE00E49F93 /* Chat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chat.h; sourceTree = "<group>"; };
+		1758F499182884DE00E49F93 /* Chat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chat.m; sourceTree = "<group>"; };
+		1758F49B182885F200E49F93 /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
+		1758F49C182885F200E49F93 /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
 		17768EC518270E8C0011521F /* HipsterChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HipsterChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17768EC818270E8C0011521F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17768ECA18270E8C0011521F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,17 +65,22 @@
 		17768ED718270E8D0011521F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17768ED818270E8D0011521F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		17768EDB18270E8D0011521F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		17768EDE18270E8D0011521F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		17768EE018270E8D0011521F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		17768EE118270E8D0011521F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		17768EE318270E8D0011521F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		17768EE418270E8D0011521F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		17768EE618270E8D0011521F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		17768EEC18270E8D0011521F /* HipsterChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipsterChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17768EED18270E8D0011521F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		17768EF518270E8D0011521F /* HipsterChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HipsterChatTests-Info.plist"; sourceTree = "<group>"; };
 		17768EF718270E8D0011521F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17768EF918270E8D0011521F /* HipsterChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HipsterChatTests.m; sourceTree = "<group>"; };
+		17768F0318270F0F0011521F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		17768F0518270F300011521F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		17768F0718270F380011521F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		17768F0918270F460011521F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		17768F0B18270F4C0011521F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		17768F0D18270F520011521F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		17768F0F18270F580011521F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		17768F1118270F5D0011521F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		17768F1318270F640011521F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		17768F1518270F6B0011521F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +88,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17768F1618270F6B0011521F /* SystemConfiguration.framework in Frameworks */,
+				17768F1418270F640011521F /* StoreKit.framework in Frameworks */,
+				17768F1218270F5D0011521F /* Security.framework in Frameworks */,
+				17768F1018270F580011521F /* QuartzCore.framework in Frameworks */,
+				17768F0E18270F520011521F /* MobileCoreServices.framework in Frameworks */,
+				17768F0C18270F4C0011521F /* libz.1.1.3.dylib in Frameworks */,
+				17768F0A18270F460011521F /* CoreLocation.framework in Frameworks */,
 				17768ECB18270E8C0011521F /* CoreGraphics.framework in Frameworks */,
+				17768F0818270F380011521F /* CFNetwork.framework in Frameworks */,
+				17768F0618270F300011521F /* AudioToolbox.framework in Frameworks */,
 				17768ECD18270E8C0011521F /* UIKit.framework in Frameworks */,
+				17768F0418270F0F0011521F /* Parse.framework in Frameworks */,
 				17768EC918270E8C0011521F /* Foundation.framework in Frameworks */,
+				1758F49418285CA300E49F93 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +140,17 @@
 		17768EC718270E8C0011521F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1758F49318285CA300E49F93 /* FacebookSDK.framework */,
+				17768F1518270F6B0011521F /* SystemConfiguration.framework */,
+				17768F1318270F640011521F /* StoreKit.framework */,
+				17768F1118270F5D0011521F /* Security.framework */,
+				17768F0F18270F580011521F /* QuartzCore.framework */,
+				17768F0D18270F520011521F /* MobileCoreServices.framework */,
+				17768F0B18270F4C0011521F /* libz.1.1.3.dylib */,
+				17768F0918270F460011521F /* CoreLocation.framework */,
+				17768F0718270F380011521F /* CFNetwork.framework */,
+				17768F0518270F300011521F /* AudioToolbox.framework */,
+				17768F0318270F0F0011521F /* Parse.framework */,
 				17768EC818270E8C0011521F /* Foundation.framework */,
 				17768ECA18270E8C0011521F /* CoreGraphics.framework */,
 				17768ECC18270E8C0011521F /* UIKit.framework */,
@@ -120,13 +165,14 @@
 				17768ED718270E8D0011521F /* AppDelegate.h */,
 				17768ED818270E8D0011521F /* AppDelegate.m */,
 				17768EDA18270E8D0011521F /* Main_iPhone.storyboard */,
-				17768EDD18270E8D0011521F /* Main_iPad.storyboard */,
-				17768EE018270E8D0011521F /* MasterViewController.h */,
-				17768EE118270E8D0011521F /* MasterViewController.m */,
-				17768EE318270E8D0011521F /* DetailViewController.h */,
-				17768EE418270E8D0011521F /* DetailViewController.m */,
 				17768EE618270E8D0011521F /* Images.xcassets */,
 				17768ECF18270E8D0011521F /* Supporting Files */,
+				1758F4951828849300E49F93 /* ChatViewController.h */,
+				1758F4961828849300E49F93 /* ChatViewController.m */,
+				1758F49B182885F200E49F93 /* ChatView.h */,
+				1758F49C182885F200E49F93 /* ChatView.m */,
+				1758F498182884DE00E49F93 /* Chat.h */,
+				1758F499182884DE00E49F93 /* Chat.m */,
 			);
 			path = HipsterChat;
 			sourceTree = "<group>";
@@ -236,7 +282,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17768EDF18270E8D0011521F /* Main_iPad.storyboard in Resources */,
 				17768EE718270E8D0011521F /* Images.xcassets in Resources */,
 				17768EDC18270E8D0011521F /* Main_iPhone.storyboard in Resources */,
 				17768ED318270E8D0011521F /* InfoPlist.strings in Resources */,
@@ -259,9 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				17768ED918270E8D0011521F /* AppDelegate.m in Sources */,
-				17768EE218270E8D0011521F /* MasterViewController.m in Sources */,
+				1758F49A182884DE00E49F93 /* Chat.m in Sources */,
 				17768ED518270E8D0011521F /* main.m in Sources */,
-				17768EE518270E8D0011521F /* DetailViewController.m in Sources */,
+				1758F49D182885F200E49F93 /* ChatView.m in Sources */,
+				1758F4971828849300E49F93 /* ChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,14 +344,6 @@
 				17768EDB18270E8D0011521F /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		17768EDD18270E8D0011521F /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17768EDE18270E8D0011521F /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		17768EF618270E8D0011521F /* InfoPlist.strings */ = {
@@ -398,10 +436,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tab/git/HipsterChat,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HipsterChat/HipsterChat-Prefix.pch";
 				INFOPLIST_FILE = "HipsterChat/HipsterChat-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,10 +454,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tab/git/HipsterChat,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HipsterChat/HipsterChat-Prefix.pch";
 				INFOPLIST_FILE = "HipsterChat/HipsterChat-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -480,6 +528,7 @@
 				17768EFF18270E8D0011521F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17768F0018270E8D0011521F /* Build configuration list for PBXNativeTarget "HipsterChatTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +537,7 @@
 				17768F0218270E8D0011521F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
@@ -18,7 +19,15 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
+    [Parse setApplicationId:@"TsvcswckVymbVUOhPMkKsT6aGtdAqhdrvW6dBozH"
+                  clientKey:@"pfgiB6GkK5Atgw4ZEFIUL53PkJRddqTUwvfHeRzZ"];
+    [PFFacebookUtils initializeFacebook];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [PFFacebookUtils handleOpenURL:url];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
