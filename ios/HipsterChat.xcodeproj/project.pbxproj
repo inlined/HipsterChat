@@ -8,16 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1758F49418285CA300E49F93 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1758F49318285CA300E49F93 /* FacebookSDK.framework */; };
-		1758F4971828849300E49F93 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758F4961828849300E49F93 /* ChatViewController.m */; };
 		1758F49A182884DE00E49F93 /* Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758F499182884DE00E49F93 /* Chat.m */; };
-		1758F49D182885F200E49F93 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758F49C182885F200E49F93 /* ChatView.m */; };
 		17768EC918270E8C0011521F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768EC818270E8C0011521F /* Foundation.framework */; };
 		17768ECB18270E8C0011521F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768ECA18270E8C0011521F /* CoreGraphics.framework */; };
 		17768ECD18270E8C0011521F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768ECC18270E8C0011521F /* UIKit.framework */; };
 		17768ED318270E8D0011521F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17768ED118270E8D0011521F /* InfoPlist.strings */; };
 		17768ED518270E8D0011521F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17768ED418270E8D0011521F /* main.m */; };
 		17768ED918270E8D0011521F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17768ED818270E8D0011521F /* AppDelegate.m */; };
-		17768EDC18270E8D0011521F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17768EDA18270E8D0011521F /* Main_iPhone.storyboard */; };
 		17768EE718270E8D0011521F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17768EE618270E8D0011521F /* Images.xcassets */; };
 		17768EEE18270E8D0011521F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768EED18270E8D0011521F /* XCTest.framework */; };
 		17768EEF18270E8D0011521F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768EC818270E8C0011521F /* Foundation.framework */; };
@@ -34,6 +31,7 @@
 		17768F1218270F5D0011521F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1118270F5D0011521F /* Security.framework */; };
 		17768F1418270F640011521F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1318270F640011521F /* StoreKit.framework */; };
 		17768F1618270F6B0011521F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1518270F6B0011521F /* SystemConfiguration.framework */; };
+		EBAB84071829CD240063C78C /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB84061829CD240063C78C /* ChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +46,8 @@
 
 /* Begin PBXFileReference section */
 		1758F49318285CA300E49F93 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		1758F4951828849300E49F93 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		1758F4961828849300E49F93 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		1758F498182884DE00E49F93 /* Chat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chat.h; sourceTree = "<group>"; };
 		1758F499182884DE00E49F93 /* Chat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chat.m; sourceTree = "<group>"; };
-		1758F49B182885F200E49F93 /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
-		1758F49C182885F200E49F93 /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
 		17768EC518270E8C0011521F /* HipsterChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HipsterChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17768EC818270E8C0011521F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17768ECA18270E8C0011521F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +58,6 @@
 		17768ED618270E8D0011521F /* HipsterChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HipsterChat-Prefix.pch"; sourceTree = "<group>"; };
 		17768ED718270E8D0011521F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17768ED818270E8D0011521F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		17768EDB18270E8D0011521F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		17768EE618270E8D0011521F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		17768EEC18270E8D0011521F /* HipsterChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipsterChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17768EED18270E8D0011521F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -81,6 +74,8 @@
 		17768F1118270F5D0011521F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		17768F1318270F640011521F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		17768F1518270F6B0011521F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EBAB84051829CD240063C78C /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		EBAB84061829CD240063C78C /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +121,9 @@
 				17768EC718270E8C0011521F /* Frameworks */,
 				17768EC618270E8C0011521F /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		17768EC618270E8C0011521F /* Products */ = {
 			isa = PBXGroup;
@@ -162,13 +159,10 @@
 		17768ECE18270E8D0011521F /* HipsterChat */ = {
 			isa = PBXGroup;
 			children = (
-				17768EDA18270E8D0011521F /* Main_iPhone.storyboard */,
 				17768ED718270E8D0011521F /* AppDelegate.h */,
 				17768ED818270E8D0011521F /* AppDelegate.m */,
-				1758F4951828849300E49F93 /* ChatViewController.h */,
-				1758F4961828849300E49F93 /* ChatViewController.m */,
-				1758F49B182885F200E49F93 /* ChatView.h */,
-				1758F49C182885F200E49F93 /* ChatView.m */,
+				EBAB84051829CD240063C78C /* ChatViewController.h */,
+				EBAB84061829CD240063C78C /* ChatViewController.m */,
 				1758F498182884DE00E49F93 /* Chat.h */,
 				1758F499182884DE00E49F93 /* Chat.m */,
 				17768EE618270E8D0011521F /* Images.xcassets */,
@@ -290,7 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				17768EE718270E8D0011521F /* Images.xcassets in Resources */,
-				17768EDC18270E8D0011521F /* Main_iPhone.storyboard in Resources */,
 				17768ED318270E8D0011521F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,9 +305,8 @@
 			files = (
 				17768ED918270E8D0011521F /* AppDelegate.m in Sources */,
 				1758F49A182884DE00E49F93 /* Chat.m in Sources */,
+				EBAB84071829CD240063C78C /* ChatViewController.m in Sources */,
 				17768ED518270E8D0011521F /* main.m in Sources */,
-				1758F49D182885F200E49F93 /* ChatView.m in Sources */,
-				1758F4971828849300E49F93 /* ChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,14 +335,6 @@
 				17768ED218270E8D0011521F /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		17768EDA18270E8D0011521F /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17768EDB18270E8D0011521F /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		17768EF618270E8D0011521F /* InfoPlist.strings */ = {
@@ -445,11 +429,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/tab/git/HipsterChat,
+					"$(SRCROOT)/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HipsterChat/HipsterChat-Prefix.pch";
 				INFOPLIST_FILE = "HipsterChat/HipsterChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -463,11 +448,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/tab/git/HipsterChat,
+					"$(SRCROOT)/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HipsterChat/HipsterChat-Prefix.pch";
 				INFOPLIST_FILE = "HipsterChat/HipsterChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
