@@ -31,6 +31,7 @@
 		17768F1218270F5D0011521F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1118270F5D0011521F /* Security.framework */; };
 		17768F1418270F640011521F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1318270F640011521F /* StoreKit.framework */; };
 		17768F1618270F6B0011521F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17768F1518270F6B0011521F /* SystemConfiguration.framework */; };
+		1788BD01185191C20007B240 /* asdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1788BD00185191C20007B240 /* asdf.m */; };
 		EBAB84071829CD240063C78C /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB84061829CD240063C78C /* ChatViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		17768F1118270F5D0011521F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		17768F1318270F640011521F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		17768F1518270F6B0011521F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1788BCFF185191C20007B240 /* asdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asdf.h; sourceTree = "<group>"; };
+		1788BD00185191C20007B240 /* asdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = asdf.m; sourceTree = "<group>"; };
 		EBAB84051829CD240063C78C /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		EBAB84061829CD240063C78C /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +164,8 @@
 			children = (
 				17768ED718270E8D0011521F /* AppDelegate.h */,
 				17768ED818270E8D0011521F /* AppDelegate.m */,
+				1788BCFF185191C20007B240 /* asdf.h */,
+				1788BD00185191C20007B240 /* asdf.m */,
 				EBAB84051829CD240063C78C /* ChatViewController.h */,
 				EBAB84061829CD240063C78C /* ChatViewController.m */,
 				1758F498182884DE00E49F93 /* Chat.h */,
@@ -248,6 +253,7 @@
 				ORGANIZATIONNAME = "Thomas Bouldin";
 				TargetAttributes = {
 					17768EC418270E8C0011521F = {
+						DevelopmentTeam = 62EZN6NXQ4;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -303,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1788BD01185191C20007B240 /* asdf.m in Sources */,
 				17768ED918270E8D0011521F /* AppDelegate.m in Sources */,
 				1758F49A182884DE00E49F93 /* Chat.m in Sources */,
 				EBAB84071829CD240063C78C /* ChatViewController.m in Sources */,
@@ -427,6 +434,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/",
@@ -436,6 +445,7 @@
 				INFOPLIST_FILE = "HipsterChat/HipsterChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -446,6 +456,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/",
@@ -455,6 +467,7 @@
 				INFOPLIST_FILE = "HipsterChat/HipsterChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

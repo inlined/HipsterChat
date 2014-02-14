@@ -58,7 +58,7 @@
                               delegate:nil
                      cancelButtonTitle:@"Okay"
                      otherButtonTitles:nil];
-    [alert show];
+     [alert show];
 }
 
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {

@@ -1,6 +1,10 @@
-
-// Use Parse.Cloud.define to define as many cloud functions as you want.
-// For example:
-Parse.Cloud.define("hello", function(request, response) {
-  response.success("Hello world!");
+// Always send a background push after a chat
+Parse.Cloud.afterSave("Chat", function(request) {
+  Parse.Push.send({
+    data: {
+      alert: request.object.get("text"),
+      "content-available": 1,
+    },
+    where: new Parse.Query(Parse.Installation)
+  });
 });
