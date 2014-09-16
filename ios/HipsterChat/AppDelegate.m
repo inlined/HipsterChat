@@ -23,9 +23,23 @@
     [Parse setApplicationId:@"TsvcswckVymbVUOhPMkKsT6aGtdAqhdrvW6dBozH"
                   clientKey:@"pfgiB6GkK5Atgw4ZEFIUL53PkJRddqTUwvfHeRzZ"];
     
-    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
-                                                    UIRemoteNotificationTypeAlert|
-                                                    UIRemoteNotificationTypeSound];
+    // iOS 8:
+    if ([application respondsToSelector:@selector(registerForRemoteNotifications)]) {
+        [application registerForRemoteNotifications];
+        UIUserNotificationSettings *settings =
+          [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert |
+                                                       UIUserNotificationTypeBadge |
+                                                       UIUserNotificationTypeSound
+                                            categories:nil];
+        [application registerUserNotificationSettings:settings];
+    
+    // Pre iOS 8:
+    } else {
+        [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert |
+                                                        UIRemoteNotificationTypeBadge |
+                                                        UIRemoteNotificationTypeSound];
+        
+    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
